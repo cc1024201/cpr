@@ -1,0 +1,8 @@
+`cert_info.h` 定义了一个名为 `CertInfo` 的类，该类用于存储和管理证书信息。具体功能包括：
+
+- 使用 `std::vector<std::string>` 存储证书信息。
+- 提供默认构造函数、拷贝构造函数、移动构造函数和接受 `std::initializer_list<std::string>` 的构造函数。
+- 提供迭代器类型定义和相应的迭代器方法（`begin`、`end`、`cbegin`、`cend`）。
+- 提供对 `std::vector<std::string>` 的操作方法，如 `operator[]`、`emplace_back`、`push_back` 和 `pop_back`。
+
+这些功能使得 `CertInfo` 类可以方便地管理和操作证书信息。

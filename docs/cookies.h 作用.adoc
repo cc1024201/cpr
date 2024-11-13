@@ -1,0 +1,1 @@
+`cookies.h` 文件定义了 `cpr` 命名空间下的 `Cookie` 和 `Cookies` 类，用于处理 HTTP 请求中的 Cookie。`Cookie` 类表示单个 Cookie，包含名称、值、域、路径、过期时间等属性。`Cookies` 类是 `Cookie` 对象的集合，提供了对多个 Cookie 的管理和操作功能。

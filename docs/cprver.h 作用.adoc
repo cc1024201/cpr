@@ -1,0 +1,7 @@
+`cprver.h` 的作用是定义 CPR 库的版本信息。它包含以下内容：
+
+- CPR 版本的字符串表示 (`CPR_VERSION`)。
+- CPR 版本的主要、次要和补丁版本号 (`CPR_VERSION_MAJOR`, `CPR_VERSION_MINOR`, `CPR_VERSION_PATCH`)。
+- CPR 版本的单一十六进制表示 (`CPR_VERSION_NUM`)。
+
+这些定义用于在代码中引用 CPR 库的版本信息。

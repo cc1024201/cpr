@@ -1,0 +1,9 @@
+`bearer.h` 定义了一个 `Bearer` 类，该类用于处理 Bearer Token。这个类只有在 `libcurl` 版本大于等于 7.61.0 时才会被编译。`Bearer` 类包含以下成员和方法：
+
+- 一个构造函数，用于初始化 `Bearer` 对象并接受一个 `std::string` 类型的 token。
+- 一个析构函数。
+- 拷贝构造函数和移动构造函数。
+- 拷贝赋值运算符和移动赋值运算符。
+- 一个 `GetToken` 方法，用于返回 token 的 C 字符串表示。
+
+这个类的主要作用是封装 Bearer Token，并提供一个接口来获取 token 的字符串表示。

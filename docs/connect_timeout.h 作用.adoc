@@ -1,0 +1,1 @@
+`connect_timeout.h` 定义了一个名为 `ConnectTimeout` 的类，该类继承自 `Timeout` 类。`ConnectTimeout` 类提供了两种构造函数，用于接受 `std::chrono::milliseconds` 或 `std::int32_t` 类型的超时时间参数。这个类的主要作用是表示连接超时的时间设置。
