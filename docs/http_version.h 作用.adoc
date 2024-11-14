@@ -1,0 +1,1 @@
+`http_version.h` 定义了一个枚举类 `HttpVersionCode` 和一个类 `HttpVersion`，用于指定 libcurl 在发起 HTTP(S) 连接时应使用的 HTTP 版本。根据不同的 libcurl 版本，`HttpVersionCode` 枚举类定义了多个 HTTP 版本选项，包括 HTTP 1.0、HTTP 1.1、HTTP 2.0、HTTP 2.0_TLS、HTTP 2.0_PRIOR_KNOWLEDGE 和 HTTP 3.0。`HttpVersion` 类包含一个成员变量 `code`，用于存储所选的 HTTP 版本，并提供了默认构造函数和带参数的构造函数。

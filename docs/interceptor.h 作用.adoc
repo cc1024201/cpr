@@ -1,0 +1,16 @@
+`interceptor.h` 定义了两个类 `Interceptor` 和 `InterceptorMulti`，它们用于拦截 HTTP 请求和多请求操作。具体来说：
+
+- `Interceptor` 类：
+- 定义了一个枚举 `ProceedHttpMethod`，列举了各种 HTTP 请求方法。
+- 提供了默认的构造函数、复制构造函数、移动构造函数、析构函数以及赋值运算符。
+- 包含一个纯虚函数 `intercept`，需要子类实现，用于拦截单个 `Session` 对象的请求。
+- 提供了多个 `proceed` 静态方法，用于处理不同类型的 HTTP 请求。
+
+- `InterceptorMulti` 类：
+- 定义了一个枚举 `ProceedHttpMethod`，列举了各种 HTTP 请求方法。
+- 提供了默认的构造函数、复制构造函数、移动构造函数、析构函数以及赋值运算符。
+- 包含一个纯虚函数 `intercept`，需要子类实现，用于拦截多个 `MultiPerform` 对象的请求。
+- 提供了一个 `proceed` 静态方法，用于处理多请求操作。
+- 提供了一个 `PrepareDownloadSession` 静态方法，用于准备下载会话。
+
+这些类和方法为拦截和处理 HTTP 请求提供了基础设施。

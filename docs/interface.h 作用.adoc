@@ -1,0 +1,1 @@
+`interface.h` 定义了一个名为 `Interface` 的类，该类继承自 `StringHolder<Interface>`。这个类提供了多种构造函数，用于从不同类型的字符串（如 `std::string`、`std::string_view`、`const char*` 等）初始化 `Interface` 对象。它还提供了默认的拷贝构造函数、移动构造函数、析构函数以及赋值运算符。这个类位于 `cpr` 命名空间中。
