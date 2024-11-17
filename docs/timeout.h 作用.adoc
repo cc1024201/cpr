@@ -1,0 +1,8 @@
+`include/cpr/timeout.h` 定义了一个名为 `Timeout` 的类，该类用于表示超时时间。主要功能如下：
+
+- 提供了一个模板构造函数，可以接受任何 `std::chrono::duration` 类型并将其转换为毫秒。
+- 提供了一个接受整数毫秒数的构造函数。
+- 提供了一个 `Milliseconds` 成员函数，返回超时时间的毫秒数。
+- 使用 `std::chrono::milliseconds` 类型存储超时时间。
+
+该类主要用于在 CPR 库中设置和处理超时时间。

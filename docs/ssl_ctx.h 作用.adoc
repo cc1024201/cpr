@@ -1,0 +1,1 @@
+`include/cpr/ssl_ctx.h` 文件定义了一个用于加载 CA 证书的回调函数 `sslctx_function_load_ca_cert_from_buffer`，该函数在初始化 SSL 连接之前由 libcurl 调用。这个回调函数从 `raw_cert_buf` 中加载 CA 证书，`raw_cert_buf` 是一个以空字符结尾的缓冲区，通过 `CURLOPT_SSL_CTX_DATA` 选项设置。

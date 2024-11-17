@@ -1,0 +1,7 @@
+`include/cpr/unix_socket.h` 文件定义了一个名为 `UnixSocket` 的类，该类用于表示 Unix 套接字。主要功能如下：
+
+- 提供了一个构造函数，接受一个 `std::string` 类型的 Unix 套接字路径。
+- 提供了一个 `GetUnixSocketString` 成员函数，返回 Unix 套接字路径的 C 字符串表示。
+- 使用 `std::string` 类型存储 Unix 套接字路径。
+
+该类主要用于在 CPR 库中处理 Unix 套接字连接。

@@ -1,0 +1,1 @@
+`include/cpr/user_agent.h` 定义了一个 `UserAgent` 类，该类继承自 `StringHolder<UserAgent>`。`UserAgent` 类用于表示用户代理字符串，并提供了多种构造函数来初始化用户代理字符串。该类还重载了赋值运算符和析构函数。文件的主要作用是为用户代理字符串提供一个封装类，以便在 CPR 库中使用。

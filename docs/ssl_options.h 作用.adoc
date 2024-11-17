@@ -1,0 +1,20 @@
+`include/cpr/ssl_options.h` 定义了一个用于配置 SSL 选项的类和相关的辅助类。主要功能包括：
+
+1. **定义 SSL 选项类**：
+- `SslOptions` 类包含了各种 SSL 配置选项，如证书文件、密钥文件、CA 信息、加密套件等。
+- 提供了设置这些选项的方法 `SetOption`。
+
+2. **定义 SSL 相关的辅助类**：
+- `VerifySsl`、`CertFile`、`KeyFile`、`PinnedPublicKey` 等类，用于表示和管理 SSL 证书、密钥和其他 SSL 相关的配置。
+- 这些类提供了构造函数和必要的成员函数来处理 SSL 配置。
+
+3. **条件编译支持**：
+- 根据 `libcurl` 版本，定义了一些宏来启用或禁用特定的 SSL 功能（如 ALPN、NPN、TLS 版本等）。
+
+4. **命名空间**：
+- 所有类和函数都在 `cpr` 和 `cpr::ssl` 命名空间中定义，以避免命名冲突。
+
+5. **安全处理**：
+- 使用 `util::secureStringClear` 函数来安全地清除敏感信息（如密码）。
+
+总的来说，这个文件提供了一个灵活的接口来配置和管理 SSL 选项，以便在使用 `libcurl` 进行网络通信时能够安全地处理 SSL/TLS 连接。

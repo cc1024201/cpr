@@ -1,0 +1,12 @@
+`include/cpr/status_codes.h` 定义了 HTTP 状态码的常量和一些辅助函数，用于检查状态码的类型。主要功能包括：
+
+1. **定义 HTTP 状态码常量**：
+- 定义了各种 HTTP 状态码的常量，如 `HTTP_OK`、`HTTP_NOT_FOUND` 等。
+
+2. **定义状态码偏移量**：
+- 定义了信息响应、成功响应、重定向消息、客户端错误响应和服务器错误响应的偏移量常量。
+
+3. **辅助函数**：
+- 提供了一些 constexpr 函数来检查状态码的类型，如 `is_informational`、`is_success`、`is_redirect`、`is_client_error` 和 `is_server_error`。
+
+这些定义和函数都在 `cpr::status` 命名空间中，以便在使用 HTTP 状态码时能够方便地进行检查和处理。

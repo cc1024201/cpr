@@ -1,0 +1,1 @@
+`include/cpr/session.h` 定义了 `cpr` 命名空间下的 `Session` 类。`Session` 类用于管理 HTTP 会话，提供了多种设置 HTTP 请求选项的方法，如 URL、参数、头信息、超时、认证、代理、重定向等。它还提供了同步和异步的 HTTP 请求方法（如 GET、POST、PUT 等），以及回调函数的支持。`Session` 类还包含了处理请求和响应的内部逻辑和拦截器机制。
