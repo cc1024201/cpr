@@ -1,0 +1,7 @@
+`include/cpr/local_port_range.h` 定义了一个名为 `LocalPortRange` 的类，该类用于表示本地端口范围。这个类包含以下内容：
+
+- 一个构造函数，用于初始化本地端口范围。
+- 一个类型转换运算符，将 `LocalPortRange` 对象转换为 `std::uint16_t` 类型。
+- 一个私有成员变量 `localportrange_`，用于存储本地端口范围。
+
+该文件的作用是提供一个封装本地端口范围的类，以便在 CPR 库中使用。
