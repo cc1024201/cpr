@@ -1,0 +1,4 @@
+`include/cpr/payload.h` 定义了 `Payload` 类，该类继承自 `CurlContainer<Pair>`。`Payload` 类的作用是用于管理 HTTP 请求的有效负载。具体功能包括：
+
+- 提供一个模板构造函数，用于从迭代器范围初始化有效负载。
+- 提供一个接受 `std::initializer_list<Pair>` 的构造函数，用于初始化有效负载列表。

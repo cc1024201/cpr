@@ -1,0 +1,4 @@
+`include/cpr/redirect.h` 定义了一个枚举类 `PostRedirectFlags` 和一个类 `Redirect`，用于处理 HTTP 请求中的重定向行为。
+
+- `PostRedirectFlags` 枚举类：定义了不同的标志，用于控制在 POST 请求重定向后的行为。
+- `Redirect` 类：包含多个成员变量和构造函数，用于配置和管理 HTTP 请求的重定向设置，包括最大重定向次数、是否跟随重定向、是否在重定向后继续发送认证信息等。
